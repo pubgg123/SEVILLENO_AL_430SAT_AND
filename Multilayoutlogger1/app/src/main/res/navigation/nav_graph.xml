@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_articles">
+
+    <fragment
+        android:id="@+id/navigation_articles"
+        android:name="com.example.multilayoutlogger.ui.ArticlesFragment"
+        android:label="@string/articles">
+        <action
+            android:id="@+id/action_articles_to_detail"
+            app:destination="@id/navigation_article_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favorites"
+        android:name="com.example.multilayoutlogger.ui.FavoritesFragment"
+        android:label="@string/favorites">
+        <action
+            android:id="@+id/action_favorites_to_detail"
+            app:destination="@id/navigation_article_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_article_detail"
+        android:name="com.example.multilayoutlogger.ui.ArticleDetailFragment"
+        android:label="@string/article_detail">
+        <argument
+            android:name="articleId"
+            app:argType="long" />
+    </fragment>
+
+</navigation> 
