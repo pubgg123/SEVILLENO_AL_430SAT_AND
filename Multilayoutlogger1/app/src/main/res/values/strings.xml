@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MultiLayoutLogger</string>
+    <string name="linear_layout">Open Linear Layout</string>
+    <string name="relative_layout">Open Relative Layout</string>
+    <string name="submit">Submit</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="android_logo">Android Logo</string>
+    <string name="enter_task">Enter task</string>
+    <string name="add_task">Add Task</string>
+    <string name="clear_all">Clear All Tasks</string>
+    <string-array name="task_categories">
+        <item>Work</item>
+        <item>Personal</item>
+        <item>Urgent</item>
+        <item>Shopping</item>
+        <item>Other</item>
+    </string-array>
+</resources>
